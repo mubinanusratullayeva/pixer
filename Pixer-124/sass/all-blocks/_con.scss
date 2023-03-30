@@ -1,0 +1,77 @@
+.block {
+    margin: 0 auto;
+    .sections {
+        margin-top: 56px;
+        @include centre();
+        @include for-tablet() {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 60px;
+        }
+        &__texts {
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 130%;
+                color: #000000;
+            }
+            &-decoration {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                @include for-tablet() {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .section {
+        margin-top: 56px;
+        @include centre();
+        @include for-tablet() {
+            flex-direction: column;
+            text-align: center;
+            row-gap: 60px;
+        }
+        &__img {
+            @include for-tablet() {
+                order: 1;
+            }
+        }
+        &__texts {
+            @include for-tablet() {
+                order: 2;
+            }
+            &-title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 130%;
+                color: #000000;
+            }
+            &-decoration {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #000000;
+                @include for-tablet() {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    &__btn {
+        max-width: 167px;
+        min-height: 40px;
+        background: #00BAFC;
+        border-radius: 5px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        border: none;
+        padding: 8px 16px;
+        margin: 50px 470px;
+        cursor: pointer;
+    }
+}
